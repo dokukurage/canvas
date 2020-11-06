@@ -1,0 +1,4 @@
+ロボ起動
+npm start
+npm run start
+等を入力
