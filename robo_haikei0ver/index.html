@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Canvasロボ</title>
+  </head>
+  <body onload="draw();">
+    <canvas id="sample" width="1820" height="1050"></canvas>
+    <script type="text/javascript">
+        function draw(){
+                var canvas = document.getElementById('sample');
+                if (canvas.getContext){
+                    var ctx = canvas.getContext('2d');
+                    //塗りつぶし長方形 　(左から,上から,幅,高さ,)の四角形を描く
+                    //「can_trial.html」から右に1475、下に620移動、　トゲトゲをオミット
+                    ctx.fillRect(1575,720,150,220);//胴体 
+                    ctx.fillRect(1510,700,50,170);//左腕
+                    ctx.fillRect(1740,700,50,170);//右腕
+                    ctx.fillRect(1550,960,50,100);//左足
+                    ctx.fillRect(1700,960,50,100);//右足
+                    ctx.fillRect(1610,620,80,80);//頭
+                    ctx.beginPath();
+                
+                    //この領域を消去（透明に）
+                    ctx.clearRect(1620,645,60,10);
+                                    
+                    //長方形枠線
+                    ctx.strokeRect(0,0,0,0);
+
+                    
+
+                    //フキダシ
+                    ctx.fillRect(1510,400,280,150);
+
+                    ctx.clearRect(1520,410,260,130);
+                    
+                    context.fill();
+                }
+         }
+            
+    </script>
+
+  </body>
+</html>
