@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>画像表示</title>
+  </head>
+
+<body>
+  <canvas id="board" width="1800" height="950"></canvas>
+
+  <script>
+  window.onload = ()=>{
+  // canvas準備
+  const board = document.querySelector("#board");  //getElementById()等でも可。オブジェクトが取れれば良い。
+  const ctx = board.getContext("2d");
+
+  // 画像読み込み
+  const chara = new Image();
+  chara.src = "../harituke/ssf4zangief.png";  // 画像のURLを指定
+  chara.onload = () => {
+    ctx.drawImage(chara, 1400, 500);
+  };
+  const chara1 = new Image();
+  chara1.src = "../harituke/ssf4sakura.png";  // 画像のURLを指定
+  chara1.onload = () => {
+    ctx.drawImage(chara1, 1000, 500);
+  };
+  const chara2 = new Image();
+  chara2.src = "../harituke/ssf4juri.png";  // 画像のURLを指定
+  chara2.onload = () => {
+    ctx.drawImage(chara2, 600, 500);
+  };
+  const chara3 = new Image();
+  chara3.src = "../harituke/ssf4dudley.png";  // 画像のURLを指定
+  chara3.onload = () => {
+    ctx.drawImage(chara3, 200, 500);
+  };
+  };
+
+  function draw() {
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext) {
+    var ctx = canvas.getContext('2d');
+
+    // 二次曲線の例
+    ctx.beginPath();
+    ctx.moveTo(75, 25);
+    ctx.quadraticCurveTo(25, 25, 25, 62.5);
+    ctx.quadraticCurveTo(25, 100, 50, 100);
+    ctx.quadraticCurveTo(50, 120, 30, 125);
+    ctx.quadraticCurveTo(60, 120, 65, 100);
+    ctx.quadraticCurveTo(125, 100, 125, 62.5);
+    ctx.quadraticCurveTo(125, 25, 75, 25);
+    ctx.stroke();
+   }
+  }
+  </script>
+
+
+</body>
+</html>
