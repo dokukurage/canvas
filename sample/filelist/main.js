@@ -1,3 +1,4 @@
+//haritukeのほうにあるindex.jsの内容に近い
 const electron = require('electron');
 
 const { app, BrowserWindow } = electron;
@@ -6,6 +7,8 @@ let win;
 function createWindow() {
   win = new BrowserWindow({
     webPreferences: {
+      //アプリの画面の枠
+      //
       nodeIntegration: true,
       enableRemoteModule: true
     }
