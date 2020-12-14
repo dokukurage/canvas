@@ -18,19 +18,21 @@ function createWindow() {
       enableRemoteModule: true
     }
   });
-  //index.htmlをロード
+  //※index.htmlをロード
+  //パスからディレクトリ部分を取り出す(dirname)
   win.loadURL(`file://${__dirname}/index.html`);
 
-  //ウィンドウが閉じられると発生(終了イベント?)
+  //※ウィンドウが閉じられると発生(終了イベント?)
   win.on('closed', () => {
     win = null
   });
 }
-//Electronが初期化&ブラウザウィンドウを作成する関数を呼ぶ
+//※Electronが初期化&ブラウザウィンドウを作成する関数を呼ぶ
 app.on('ready', createWindow);
 
-//ウィンドウが閉じられると終了
+//※ウィンドウが閉じられるとアプリ終了
 app.on('window-all-closed', () => {
+  //プラットフォーム(土台となる環境)に「darwin」を使っている
   if (process.platform !== 'darwin') {
     app.quit();
   }

@@ -4,6 +4,7 @@ const fs = require('fs');
 //ここからフォルダ内のファイル読み込み
 function readFileList() {
     let ul = document.querySelector('ul#filelist');
+    //ファイル情報を取得
     fs.readdir('./images/', function (err, list) {
         if (err) {
             return;
