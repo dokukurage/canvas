@@ -1,0 +1,16 @@
+各コード参考場所
+
+・main.js
+[はじめてElectron]Quiita
+https://qiita.com/teratsyk/items/78bca5ac1f11d570b031
+
+・
+[]
+
+
+・
+[]
+
+
+・
+[]

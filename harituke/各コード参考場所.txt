@@ -1,0 +1,17 @@
+各コード参考場所
+
+・index.js
+[【情緒的なITお遊び】Electronで画面に桜の花びらを降らせてみた]
+https://shinmedia20.com/electron-sakura#1_Electron
+
+
+・
+[]
+
+
+・
+[]
+
+
+・
+[]
