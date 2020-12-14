@@ -1,0 +1,7 @@
+
+・indec.js
+
+・index.html
+
+ともに[sample/filelist]内のソースファイルをコピーし、
+[harituke]内の要素を組み合わせた
